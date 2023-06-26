@@ -18,7 +18,7 @@ resource "aws_instance" "web" {
           systemctl enable httpd
           yum install git -y
 	  git clone https://github.com/goodluck2717/goodluck.git
-	  mv /goodluck/* /var/www/html/
+	  mv /goodluck/index.html /var/www/html/
           EOF
 
 
